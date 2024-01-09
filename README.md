@@ -48,6 +48,14 @@ Idrac.changeUser(Str: User) - changes user
 
 Idrac.changeIP(str: ip) - changes ip of where commands are sent
 
+# notes about startup and stopping
+
+Idrac.powerON()
+
+In my setup. I don't like how loud r710 can get on inital startup of server. So to fix this the script sets fan speed to 12% manually few seconds after startup.
+To use automode after start up just Do 
+- you can remove this by removing self.changeFanSpeed(12) in poweron
+
 # feel free to raise any issues or pull request any additional features to be added.
 
 
